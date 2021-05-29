@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    [SerializeField]
+    int playerHealth = 25;
     public CharacterController controller;
     public GameObject projectile;
     
@@ -34,13 +36,22 @@ public class PlayerController : MonoBehaviour
 
 
         if(Input.GetMouseButtonDown(0)){
-          //  Debug.Log("Boom!");
             RaycastHit hit;
             if(Physics.Raycast(camTransform.position,camTransform.forward, out hit, raycastDistance)){
                 Debug.Log(hit.transform.name + "hi ");
                 Instantiate(projectile,hit.point,Quaternion.identity);
+                if(hit.collider.gameObject.tag == "Enemy"){
+                    EnemyHealth e = hit.collider.gameObject.GetComponent<EnemyHealth>();
+                    e.takeDamage(5);
+                }
             }
         }
+    }
+
+    void OnCollisionEnter(Collision other) {
+        Debug.Log("Collider " + other.gameObject);
+        if(other.gameObject.tag == "Bullet")playerHealth-=5;
+        if(playerHealth <= 0)Destroy(this.gameObject);
     }
 
    

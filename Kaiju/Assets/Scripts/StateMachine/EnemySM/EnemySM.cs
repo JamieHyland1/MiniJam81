@@ -14,10 +14,19 @@ public class EnemySM : StateMachine
     [SerializeField]
     Animator animator;
 
+    [SerializeField]
+    public float distanceToShootFrom = 2f;
+
+    [SerializeField]
+    GameObject bulletObj;
+
+    [SerializeField]
+    Transform bulletTransform;
+
     private void Awake() {
-        IdleState = new EnemyIdleState(this,playerTransform,animator);
-        WalkState = new EnemyWalkState(this,playerTransform,animator,10,10);
-        ShootState = new EnemyShootState(this,playerTransform,animator);
+        IdleState = new EnemyIdleState(this, playerTransform, animator);
+        WalkState = new EnemyWalkState(this, playerTransform,animator, 1.3f, distanceToShootFrom);
+        ShootState = new EnemyShootState(this, playerTransform, animator, bulletTransform, bulletObj);
 
 
         this.ChangeState(IdleState);
