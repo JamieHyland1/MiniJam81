@@ -7,12 +7,16 @@ public class EnemyShootState : IState
     EnemySM _EnemySM;
     Transform PlayerTransform;
 
-    public EnemyShootState(EnemySM _esm, Transform plyrTrans){
+    Animator animator;
+
+    public EnemyShootState(EnemySM _esm, Transform plyrTrans, Animator animator){
         this._EnemySM = _esm;
         this.PlayerTransform = plyrTrans;
+        this.animator = animator;
     }
     public void Enter(){
         Debug.Log("ENTERING SHOOT STATE");
+        animator.SetTrigger("Shooting");
     }
     public void Exit(){
         Debug.Log("LEAVING SHOOT STATE");

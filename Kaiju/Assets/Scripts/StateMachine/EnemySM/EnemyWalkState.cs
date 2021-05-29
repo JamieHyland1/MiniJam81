@@ -7,6 +7,8 @@ public class EnemyWalkState : IState
     EnemySM _EnemySM;
     Transform playerTransform;
 
+    Animator animator;
+
     float timer;
     float distanceToShootFrom;
 
@@ -15,9 +17,10 @@ public class EnemyWalkState : IState
     bool readyToShoot = false;
     
 
-    public EnemyWalkState(EnemySM enemySM, Transform plyrTrans, float timer, float distanceToShootFrom){
+    public EnemyWalkState(EnemySM enemySM, Transform plyrTrans, Animator animator, float timer, float distanceToShootFrom){
         this._EnemySM = enemySM;
         this.playerTransform = plyrTrans;
+        this.animator = animator;
         this.timer=timer;
         this.distanceToShootFrom = distanceToShootFrom;
        
@@ -25,6 +28,7 @@ public class EnemyWalkState : IState
 
     public void Enter(){
         Debug.Log("ENTERED WALKING STATE");
+        animator.SetTrigger("Walking");
         counter = timer;
     }
 

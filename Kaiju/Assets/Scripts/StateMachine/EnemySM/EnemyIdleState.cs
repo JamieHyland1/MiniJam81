@@ -6,13 +6,15 @@ public class EnemyIdleState : IState
 {
     EnemySM _EnemySM;
     Transform playerTransform;
-
-    public EnemyIdleState(EnemySM enemySM, Transform plyrTrans){
+    Animator animator;
+    public EnemyIdleState(EnemySM enemySM, Transform plyrTrans, Animator animator){
         this._EnemySM = enemySM;
         this.playerTransform = plyrTrans;
+        this.animator = animator;
     }
     public void Enter(){
         Debug.Log("CHANGED TO IDLE STATE");
+        animator.SetTrigger("Idle");
     }
 
     public void Exit()

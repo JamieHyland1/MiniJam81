@@ -11,10 +11,13 @@ public class EnemySM : StateMachine
     [SerializeField]
     Transform playerTransform;
 
+    [SerializeField]
+    Animator animator;
+
     private void Awake() {
-        IdleState = new EnemyIdleState(this,playerTransform);
-        WalkState = new EnemyWalkState(this,playerTransform,10,10);
-        ShootState = new EnemyShootState(this,playerTransform);
+        IdleState = new EnemyIdleState(this,playerTransform,animator);
+        WalkState = new EnemyWalkState(this,playerTransform,animator,10,10);
+        ShootState = new EnemyShootState(this,playerTransform,animator);
 
 
         this.ChangeState(IdleState);

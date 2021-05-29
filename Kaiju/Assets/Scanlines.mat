@@ -57,8 +57,8 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _ScanLines:
         m_Texture: {fileID: 2800000, guid: f648b23698f5a114fa3c9b46a2254566, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
+        m_Scale: {x: 27.36, y: 1}
+        m_Offset: {x: -5.03, y: 14.08}
     m_Floats:
     - _BumpScale: 1
     - _Cutoff: 0.5
@@ -71,7 +71,7 @@ Material:
     - _Mode: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.02
-    - _Size: 1100
+    - _Size: 600
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
