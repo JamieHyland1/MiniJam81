@@ -1,12 +1,36 @@
 fileFormatVersion: 2
 guid: 8910b7a56443a824d9ef920ec54e02e3
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -7942321815930859327
+    second: PinkShootFront
+  - first:
+      213: 550809567351564372
+    second: PinkShootFrontRight
+  - first:
+      213: -5227356945293275531
+    second: PinkShootRight
+  - first:
+      213: -2992352774673333442
+    second: PinkShootBackRight
+  - first:
+      213: -773584557430179228
+    second: PinkShootBack
+  - first:
+      213: 5368150140616920380
+    second: PinkShootBackLeft
+  - first:
+      213: -4829363416694034956
+    second: PinkShootLeft
+  - first:
+      213: 3276011055897439881
+    second: PinkShootFrontLeft
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -31,27 +55,27 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 0
     aniso: -1
     mipBias: -100
-    wrapU: -1
-    wrapV: -1
+    wrapU: 1
+    wrapV: 1
     wrapW: -1
-  nPOTScale: 1
+  nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 0
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 256
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spriteGenerateFallbackPhysicsShape: 1
+  spriteGenerateFallbackPhysicsShape: 0
   alphaUsage: 1
-  alphaIsTransparency: 0
+  alphaIsTransparency: 1
   spriteTessellationDetail: -1
-  textureType: 0
+  textureType: 8
   textureShape: 1
   singleChannelComponent: 0
   maxTextureSizeSet: 0
@@ -63,7 +87,43 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -72,11 +132,179 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: PinkShootFront
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 162
+        height: 247
+      alignment: 9
+      pivot: {x: 0.40095323, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00a70748bfea38d49bfaf47f0dd6a3e5
+      internalID: -7942321815930859327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PinkShootFrontRight
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 0
+        width: 143
+        height: 247
+      alignment: 9
+      pivot: {x: 0.3709706, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76c7031b95b477e45b7826c4a2b127f2
+      internalID: 550809567351564372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PinkShootRight
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 0
+        width: 219
+        height: 247
+      alignment: 9
+      pivot: {x: 0.37001085, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 093811514a24f574ea1f716b1d047fd5
+      internalID: -5227356945293275531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PinkShootBackRight
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 0
+        width: 236
+        height: 247
+      alignment: 9
+      pivot: {x: 0.47639802, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cc50c0d8102b4840bd4401f458e813f
+      internalID: -2992352774673333442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PinkShootBack
+      rect:
+        serializedVersion: 2
+        x: 783
+        y: 0
+        width: 169
+        height: 247
+      alignment: 9
+      pivot: {x: 0.6380149, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 034a08f34587f78409118643f6c630d2
+      internalID: -773584557430179228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PinkShootBackLeft
+      rect:
+        serializedVersion: 2
+        x: 963
+        y: 0
+        width: 121
+        height: 247
+      alignment: 9
+      pivot: {x: 0.6002379, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5c6d559ff6b5fd4fa38e931606eac02
+      internalID: 5368150140616920380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PinkShootLeft
+      rect:
+        serializedVersion: 2
+        x: 1089
+        y: 0
+        width: 214
+        height: 247
+      alignment: 9
+      pivot: {x: 0.6089934, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d584acd28131f214f9e49fa23603797b
+      internalID: -4829363416694034956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PinkShootFrontLeft
+      rect:
+        serializedVersion: 2
+        x: 1314
+        y: 0
+        width: 256
+        height: 247
+      alignment: 9
+      pivot: {x: 0.53826714, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 875fa38afa4a4264b827c1d91f13ce78
+      internalID: 3276011055897439881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 71690cdf399d01e439638b25c31f1c4b
     internalID: 0
     vertices: []
     indices: 

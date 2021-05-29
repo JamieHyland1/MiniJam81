@@ -4,22 +4,28 @@ TextureImporter:
   internalIDToNameTable:
   - first:
       213: -6045318901833035128
-    second: GreenStand_0
+    second: GreenStandFront
   - first:
       213: -8078960284221502056
-    second: GreenStand_1
+    second: GreenStandFrontRight
   - first:
       213: -9180992615066196473
-    second: GreenStand_2
+    second: GreenStandRight
   - first:
       213: -991247718098337830
-    second: GreenStand_3
+    second: GreenStandBackRight
   - first:
       213: 561864508366849938
-    second: GreenStand_4
+    second: GreenStandBack
   - first:
       213: 4122231930903602173
-    second: GreenStand_5
+    second: GreenStandBackLeft
+  - first:
+      213: 5217889443170690897
+    second: GreenStandLeft
+  - first:
+      213: 3800144931428220908
+    second: GreenStandFrontLeft
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -63,9 +69,9 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 253
+  spritePixelsToUnits: 256
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spriteGenerateFallbackPhysicsShape: 1
+  spriteGenerateFallbackPhysicsShape: 0
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -112,131 +118,185 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: GreenStand_0
+      name: GreenStandFront
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 256
+        width: 161
         height: 253
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.39751554, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2010067d4a4e3e64a917d98e0e67045d
+      spriteID: 741353e8648f27344a5e10f1443d7444
       internalID: -6045318901833035128
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GreenStand_1
+      name: GreenStandFrontRight
       rect:
         serializedVersion: 2
-        x: 256
+        x: 178
         y: 0
-        width: 256
+        width: 147
         height: 253
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.4489796, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: abf843608b9b87c49ab3c5bedb125b88
+      spriteID: 371760273b23db7489c274df5ec40211
       internalID: -8078960284221502056
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GreenStand_2
+      name: GreenStandRight
       rect:
         serializedVersion: 2
-        x: 512
+        x: 384
         y: 0
-        width: 256
+        width: 214
         height: 253
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.36448598, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c7f5d8fce67291849bbf37e38447a6b9
+      spriteID: 365c358d4431bca45aaef91d932fe2e7
       internalID: -9180992615066196473
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GreenStand_3
+      name: GreenStandBackRight
       rect:
         serializedVersion: 2
-        x: 768
+        x: 623
         y: 0
-        width: 256
-        height: 253
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 229
+        height: 246
+      alignment: 9
+      pivot: {x: 0.48034936, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 929edcd8be0dec64da27329ff6ac6b13
+      spriteID: 95f2563f9f18f1640bf1d21e77fdbd11
       internalID: -991247718098337830
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GreenStand_4
+      name: GreenStandBack
       rect:
         serializedVersion: 2
-        x: 1024
+        x: 871
         y: 0
-        width: 256
-        height: 253
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 161
+        height: 236
+      alignment: 9
+      pivot: {x: 0.65217394, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f48fc1d64dd08d74e9de0462bf0fe093
+      spriteID: dd2cc965cecc39d46a2cdf20add42f39
       internalID: 561864508366849938
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GreenStand_5
+      name: GreenStandBackLeft
       rect:
         serializedVersion: 2
-        x: 1280
+        x: 1046
         y: 0
-        width: 256
-        height: 253
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 125
+        height: 244
+      alignment: 9
+      pivot: {x: 0.57600003, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8ab4b5fbf17d8dd448812a5f6a3481ea
+      spriteID: aac6fed13a31a154aa6bcd57356c42aa
       internalID: 4122231930903602173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenStandLeft
+      rect:
+        serializedVersion: 2
+        x: 1189
+        y: 0
+        width: 212
+        height: 244
+      alignment: 9
+      pivot: {x: 0.6179245, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 151100d84a84554469028036a331da3b
+      internalID: 5217889443170690897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenStandFrontLeft
+      rect:
+        serializedVersion: 2
+        x: 1415
+        y: 0
+        width: 256
+        height: 247
+      alignment: 9
+      pivot: {x: 0.55078125, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a33393aa6c3a0c544a4f767e0ca25e0b
+      internalID: 3800144931428220908
       vertices: []
       indices: 
       edges: []
