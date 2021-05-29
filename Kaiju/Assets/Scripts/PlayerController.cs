@@ -6,15 +6,17 @@ public class PlayerController : MonoBehaviour
 {
     public CharacterController controller;
     public GameObject projectile;
-    RaycastHit hit;
+    
     [SerializeField, Range(0f,10f)]
       public float speed = 12f;
 
     [SerializeField]
     LayerMask mask;
-    [SerializeField,Range(1,10f)]
-    float raycastDistance;
-  
+    [SerializeField,Range(1,100f)]
+    float raycastDistance = 5f;
+
+    [SerializeField]
+    Transform camTransform;
     // Start is called before the first frame update
     void Start()
     {
@@ -32,10 +34,12 @@ public class PlayerController : MonoBehaviour
 
 
         if(Input.GetMouseButtonDown(0)){
-            Debug.Log("Boom!");
-
-            Physics.Raycast(transform.position,this.transform.forward, out hit, raycastDistance, mask);
-            Debug.Log(hit.distance);
+          //  Debug.Log("Boom!");
+            RaycastHit hit;
+            if(Physics.Raycast(camTransform.position,camTransform.forward, out hit, raycastDistance)){
+                Debug.Log(hit.transform.name + "hi ");
+                Instantiate(projectile,hit.point,Quaternion.identity);
+            }
         }
     }
 
