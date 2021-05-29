@@ -1,12 +1,36 @@
 fileFormatVersion: 2
 guid: 220545a2374d6e14da3bacdd67b1e395
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 3236396326094004676
+    second: PinkStandFront
+  - first:
+      213: -8060695010380254760
+    second: PinkStandFrontRight
+  - first:
+      213: -2559248782674278884
+    second: PinkStandRight
+  - first:
+      213: 1100331141618255986
+    second: PinkStandBackRight
+  - first:
+      213: -3777981202319712784
+    second: PinkStandBack
+  - first:
+      213: -6629333473855762154
+    second: PinkStandBackLeft
+  - first:
+      213: -3219338415713602970
+    second: PinkStandLeft
+  - first:
+      213: -7622207346585403681
+    second: PinkStand_0
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -31,27 +55,27 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 0
     aniso: -1
     mipBias: -100
-    wrapU: -1
-    wrapV: -1
+    wrapU: 1
+    wrapV: 1
     wrapW: -1
-  nPOTScale: 1
+  nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 0
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 256
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spriteGenerateFallbackPhysicsShape: 1
+  spriteGenerateFallbackPhysicsShape: 0
   alphaUsage: 1
-  alphaIsTransparency: 0
+  alphaIsTransparency: 1
   spriteTessellationDetail: -1
-  textureType: 0
+  textureType: 8
   textureShape: 1
   singleChannelComponent: 0
   maxTextureSizeSet: 0
@@ -63,7 +87,43 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -72,11 +132,179 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: PinkStandFront
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 0
+        width: 161
+        height: 253
+      alignment: 9
+      pivot: {x: 0.39751554, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c493f76317746e8458815ef62f6f4599
+      internalID: 3236396326094004676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PinkStandFrontRight
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 0
+        width: 147
+        height: 253
+      alignment: 9
+      pivot: {x: 0.4489796, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 840642409447d734992eb90af69024ce
+      internalID: -8060695010380254760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PinkStandRight
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 214
+        height: 253
+      alignment: 9
+      pivot: {x: 0.36448598, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f7bc888bb4da6c46980d792bd8a6e22
+      internalID: -2559248782674278884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PinkStandBackRight
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 0
+        width: 229
+        height: 246
+      alignment: 9
+      pivot: {x: 0.48034936, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecdc5422023e402488da3d0471c19d6a
+      internalID: 1100331141618255986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PinkStandBack
+      rect:
+        serializedVersion: 2
+        x: 871
+        y: 0
+        width: 161
+        height: 236
+      alignment: 9
+      pivot: {x: 0.65217394, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4faf92b0153ed9e439cac63ab020e05d
+      internalID: -3777981202319712784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PinkStandBackLeft
+      rect:
+        serializedVersion: 2
+        x: 1046
+        y: 0
+        width: 125
+        height: 244
+      alignment: 9
+      pivot: {x: 0.57600003, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 437bb5aef070bea42b9f3aa1e2ab8b4a
+      internalID: -6629333473855762154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PinkStandLeft
+      rect:
+        serializedVersion: 2
+        x: 1189
+        y: 0
+        width: 212
+        height: 244
+      alignment: 9
+      pivot: {x: 0.6179245, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdc18fcbd0b0b8946b6c41040cdbb48c
+      internalID: -3219338415713602970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PinkStand_0
+      rect:
+        serializedVersion: 2
+        x: 1415
+        y: 0
+        width: 256
+        height: 247
+      alignment: 9
+      pivot: {x: 0.55078125, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5e64bccced883743b00c88cf8467d9c
+      internalID: -7622207346585403681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: eb3e8f924492ce54e8392115497a0b27
     internalID: 0
     vertices: []
     indices: 
