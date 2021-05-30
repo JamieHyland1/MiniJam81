@@ -10,7 +10,11 @@ public class EnemyHealth : MonoBehaviour
 
    public void takeDamage(int damage){
        enemyHealth -= damage;
-       if(enemyHealth <= 0)Destroy(this.gameObject);
+       if(enemyHealth <= 0){
+           EnemyCounter.numEnemies--;
+           Debug.Log("ENEMY Died" + " " + EnemyCounter.numEnemies);
+           Destroy(this.gameObject);
+       }
 
    }
 }

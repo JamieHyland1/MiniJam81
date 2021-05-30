@@ -12,4 +12,13 @@ public class DialogueTrigger : MonoBehaviour
       FindObjectOfType<DialogueManager>().StartDialogue(this.dialogue,this);
     }
   }
+
+  public void updateCheckList(){
+    CheckNPCs n = FindObjectOfType<CheckNPCs>().GetComponent<CheckNPCs>();
+    if(this.gameObject.name == "Buddy1")n.Buddy1=true;
+    if(this.gameObject.name == "Buddy2")n.Buddy2=true;
+    if(this.gameObject.name == "Buddy3")n.Buddy3=true;
+    if(this.gameObject.name == "Buddy4")n.Buddy4=true;
+    
+  }
 }

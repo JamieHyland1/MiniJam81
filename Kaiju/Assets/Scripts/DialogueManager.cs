@@ -43,6 +43,7 @@ public class DialogueManager : MonoBehaviour
         animator.SetBool("isOpen",false);
         nameText.text = "";
         dialogueText.text = "";
+        currentTrigger.updateCheckList();
         currentTrigger.dialoguePlaying = false;
         currentTrigger = null;
         sentences.Clear();
