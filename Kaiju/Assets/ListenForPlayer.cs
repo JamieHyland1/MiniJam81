@@ -5,16 +5,16 @@ using UnityEngine;
 public class ListenForPlayer : MonoBehaviour
 {
    bool playerNearby = false;
+   public DialogueTrigger trigger;
 
     // Update is called once per frame
     void Update()
     {
         if(playerNearby && Input.GetMouseButtonDown(0)){
-            DialogueTrigger trig = this.GetComponent<DialogueTrigger>();
-            if(trig.dialoguePlaying){
+            if(trigger.dialoguePlaying){
                 FindObjectOfType<DialogueManager>().DisplayNextSentence();
             }else{
-                trig.TriggerDialogue();
+                trigger.TriggerDialogue();
             }
         }
     }
@@ -29,7 +29,7 @@ public class ListenForPlayer : MonoBehaviour
 
     private void OnCollisionExit(Collision other) {
          if(other.gameObject.name =="Player"){
-            playerNearby = true;
+            playerNearby = false;
         }   
     }
 }
