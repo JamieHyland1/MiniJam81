@@ -16,6 +16,7 @@ public class PlayerSM : StateMachine
     int playerHealth = 25;
     public CharacterController controller;
     public GameObject projectile;
+    public GameObject explosion;
     
     [SerializeField, Range(0f,10f)]
       public float speed = 12f;
@@ -24,12 +25,21 @@ public class PlayerSM : StateMachine
     LayerMask mask;
     [SerializeField,Range(1,100f)]
     float raycastDistance = 5f;
+    int damage = 5;
 
     [SerializeField]
     Transform camTransform;
 
+    [SerializeField]
+    Transform shootingTransform;
+
    private void Awake() {
-      shootingState = new ShootingState(this,camTransform,projectile,raycastDistance);
+      Debug.Log("PLAYER VARIABLES" + " " + PlayerVariables.playerHealth);
+      playerHealth = PlayerVariables.playerHealth;
+      speed = PlayerVariables.speed;
+      raycastDistance = PlayerVariables.rayCastDistance;
+      damage = PlayerVariables.damage;
+      shootingState = new ShootingState(this,camTransform,projectile,raycastDistance, shootingTransform);
       talkingState = new TalkingState(this);
    }
 
@@ -51,7 +61,7 @@ public class PlayerSM : StateMachine
 
     void OnCollisionEnter(Collision other) {
         Debug.Log("Collider " + other.gameObject);
-        if(other.gameObject.tag == "Bullet")playerHealth-=5;
-        if(playerHealth <= 0)Destroy(this.gameObject);
+        if(other.gameObject.tag == "Bullet")playerHealth-=damage;
+        if(playerHealth <= 0)FindObjectOfType<LevelLoader>().GetComponent<LevelLoader>().LoadNextLevel();
     }
 }

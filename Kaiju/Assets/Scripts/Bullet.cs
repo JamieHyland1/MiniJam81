@@ -14,14 +14,12 @@ public class Bullet : MonoBehaviour
     Vector3 target;
     void Start(){
         counter = bulletLifeTime;
-        target = GameObject.FindGameObjectWithTag("Player").transform.position;
-        Debug.Log("TARGET " + target);
     }
     // Update is called once per frame
     void Update(){
         if(Vector3.Distance(this.transform.position,target) < 0.01f)Destroy(this.gameObject);
         counter -= Time.deltaTime;
-        this.transform.position = Vector3.MoveTowards(this.transform.position, target*bulletSpeed*Time.deltaTime,1f);
+        transform.position = Vector3.MoveTowards(this.transform.position, this.transform.position + transform.forward * bulletSpeed * Time.deltaTime,5);
         if(counter <= 0)Destroy(this.gameObject);
     }
 }
