@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: f52b4f3d661ef554abe66ea106a27f60, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.21866629, g: 0.2721976, b: 0.54895955, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -187,6 +187,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1622922083660344042, guid: d1ef7e6ba466d044aba02ad35ba37540,
+        type: 3}
+      propertyPath: playerTransform
+      value: 
+      objectReference: {fileID: 2069752420}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d1ef7e6ba466d044aba02ad35ba37540, type: 3}
 --- !u!1 &11304251
@@ -449,6 +454,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3194503464461156108, guid: 086c11630b2cf66448c0f7a687f6f61b,
+        type: 3}
+      propertyPath: playerTransform
+      value: 
+      objectReference: {fileID: 2069752420}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 086c11630b2cf66448c0f7a687f6f61b, type: 3}
 --- !u!1 &271307363
@@ -500,7 +510,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 2100000, guid: 0395216cbf38bcc4d99e89dc6749485c, type: 2}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
@@ -1002,6 +1012,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7556300936866703955, guid: fb7ac01dfda628f4481b44ffadbdf49b,
+        type: 3}
+      propertyPath: playerTransform
+      value: 
+      objectReference: {fileID: 2069752420}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fb7ac01dfda628f4481b44ffadbdf49b, type: 3}
 --- !u!1 &1991136461 stripped
